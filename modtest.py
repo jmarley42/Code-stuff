@@ -30,6 +30,5 @@ for loop in range(20):
     # wait 0.5 second before looping
     sleep(0.5)
 
-
 #close connection
 sock.close()
