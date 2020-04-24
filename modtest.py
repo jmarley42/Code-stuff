@@ -7,7 +7,6 @@ from time import sleep
 
 SCADAIP = '192.168.0.12'
 
-
 # Enable values to be signed (default is False).
 conf.SIGNED_VALUES = True
 
