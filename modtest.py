@@ -14,7 +14,7 @@ conf.SIGNED_VALUES = True
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.connect((SCADAIP, 502))
 
-#loop to blink light
+#loop to blink light (range value is 2x the number of 'on' blinks
 for loop in range(20):
     
     # start with 'on' command (1)
