@@ -17,12 +17,10 @@ sock.connect((SCADAIP, 502))
 
 #loop to blink light
 for loop in range(20):
-    if (loop%2==0):
-        # start with 'on' command
-        onoff = 1  
-    else:
-        # make sure range value is even if you want to end with light off
-        onoff = 0; 
+    
+    # start with 'on' command (1)
+    # make sure range value is even if you want to end with light off
+    onoff = 1 if (loop%2==0) else 0 
         
     # set message to write to coil (DO4)
     message = tcp.write_single_coil(slave_id=1, address=4, value=onoff)
